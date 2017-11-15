@@ -1,0 +1,30 @@
+
+
+/* give layout to Menu Table of Contents */
+#toc li {zoom:1;}
+
+/* give layout to phone numbers on Location page */
+#map-address li {zoom:1;}
+
+/* needs layout, but display:inline-block gives layout by default */
+#photos ul li {}
+
+/* IE6 can't handle height:100% so make it fixed and hide the extra */
+* html #wrapper {overflow:hidden;}
+* html .borderleft, .borderright {height:690px;}
+
+/* IE6 fix alpha transparency png's */ 
+* html #header {background-image:url('../images/kobe-logo.gif');}
+* html #nav {background-image:url('../images/j.gif');}
+* html #wrapper {background-image:none;background-color:#000000;}
+
+* html #menu_list dd.price {margin-right:2em;}
+
+/* fix IE6's img scaling on gallery page */
+* html #fullsize img {width:39em; height:29em;}
+
+
+/*
+#header a {width:20em; height:10em; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/kobe-logo.png", sizingMethod="image");}
+#nav {background-image:none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/j.png", sizingMethod="crop");}
+*/
