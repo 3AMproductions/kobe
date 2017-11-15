@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Kobe Japanese Steakhouse - Home</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script language="Javascript">
+		// Interactive map variables
+		var a, c, s, z;
+		var a2, c2, s2, z2;
+		
+		function fromLocation(a1, c1, s1, z1)
+		{
+			// From user entered location
+			a = a1;
+			c = c1;
+			s = s1;
+			z = z1;
+		}
+		
+		function populateA()
+		{
+			// Hardcoded end point A
+			a2 = "3884 Morse Road";
+			c2 = "Columbus";
+			s2 = "OH";
+			z2 = "43219";
+		}
+		
+		function toA(a1, c1, s1, z1)
+		{
+			fromLocation(a1, c1, s1, z1);
+			populateA();
+			findDirections();
+		}
+		
+		function findDirections()
+		{
+			var parm =  "strt1=" + a + "&city1=" + c + "&stnm1=" + s + "&zipc1=" + z + "&cnty1=0";
+			parm    += "&strt2=" + a2 + "&city2=" + c2 + "&stnm2=" + s2 + "&zipc2=" + z2 + "&cnty2=0";
+			parm    += "&rtyp=0";
+			parm    += "&unit=0";
+			
+			find(parm);
+		}
+		
+		function find(parm)
+		{
+			// Open a new browser window for the other website
+			var site = "http://maps.msn.com/directionsFind.aspx?";
+			window.open(site + parm, 'directions', "width=700, height=800, toolbar=yes, location=yes, directories=yes, status=yes, menubar=yes, scrollbars=yes, resizable=yes");
+		}
+
+		</script>
+</head>
+
+<body>
+	<center>
+
+	<img src="openingSoon.jpg" alt="opening soon" />
+
+	<h1>Kobe Japanese Steakhouse</h1><br/>
+	<h2>3884 Morse Road<br/>
+	    Columbus, Ohio, 43219<br/>
+	    Phone: (614) 428 - 8880<br/>
+ 	</h2>
+
+	<br/>
+	<h4>
+		<a href="javascript:toA('', '', '', '');">Directions</a>
+	<br/><br/>
+
+	    Please visit us in late September '07.	
+	</h4>
+	</center>
+
+<body>
