@@ -16,12 +16,12 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="/styles/kobe.css" />
-	<link rel="stylesheet" type="text/css" href="/styles/jquery.lightbox-0.3.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/jquery.lightbox-0.3.css" />
     <!--[if IE]><link rel="stylesheet" type="text/css" href="/styles/ie.css" /><![endif]-->
 
     <!-- Scripts -->
     <script type="text/javascript" src="/scripts/jquery-1.2.1.pack.js"></script>
-	<script type="text/javascript" src="/scripts/jquery.lightbox-0.3.1.js"></script>
+  <script type="text/javascript" src="/scripts/jquery.lightbox-0.3.1.js"></script>
     <script type="text/javascript" src="/scripts/kobe.js"></script>
 </head>
 <body>
@@ -41,19 +41,19 @@
         <?php if($_GET['photo']) echo '<img src="/images/' . htmlspecialchars($_GET['photo']) . '.full.jpg" alt="" />'; ?>
     </div>
     <h3>Outdoor Photos</h3>
-	  <div class="photos">	  
-	    <ul>
+    <div class="photos">
+      <ul>
         <li><a href="/gallery/o01/" title="Outdoor Images Gallery"><img src="/images/o01.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/p01/" title="Outdoor Images Gallery"><img src="/images/p01.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/p02/" title="Outdoor Images Gallery"><img src="/images/p02.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/o03/" title="Outdoor Images Gallery"><img src="/images/o03.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/o02/" title="Outdoor Images Gallery"><img src="/images/o02.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/o04/" title="Outdoor Images Gallery"><img src="/images/o04.thumb.jpg" alt="" /></a></li>
-	    </ul>		
+      </ul>
     </div>
     <h3>Dining Room Photos</h3>
-	  <div class="photos">	  
-	    <ul>
+    <div class="photos">
+      <ul>
         <li><a href="/gallery/d01/" title="Dining Room Images Gallery"><img src="/images/d01.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/d02/" title="Dining Room Images Gallery"><img src="/images/d02.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/d03/" title="Dining Room Images Gallery"><img src="/images/d03.thumb.jpg" alt="" /></a></li>
@@ -63,11 +63,11 @@
         <li><a href="/gallery/d07/" title="Dining Room Images Gallery"><img src="/images/d07.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/d08/" title="Dining Room Images Gallery"><img src="/images/d08.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/d09/" title="Dining Room Images Gallery"><img src="/images/d09.thumb.jpg" alt="" /></a></li>
-	    </ul>		
+      </ul>
     </div>
     <h3>Entrance and Bar Photos</h3>
-	  <div class="photos">	  
-	    <ul>
+    <div class="photos">
+      <ul>
         <li><a href="/gallery/e01/" title="Entrance and Bar Images Gallery"><img src="/images/e01.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/e02/" title="Entrance and Bar Images Gallery"><img src="/images/e02.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/e03/" title="Entrance and Bar Images Gallery"><img src="/images/e03.thumb.jpg" alt="" /></a></li>
@@ -77,7 +77,7 @@
         <li><a href="/gallery/b03/" title="Entrance and Bar Images Gallery"><img src="/images/b03.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/b04/" title="Entrance and Bar Images Gallery"><img src="/images/b04.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/b05/" title="Entrance and Bar Images Gallery"><img src="/images/b05.thumb.jpg" alt="" /></a></li>
-	    </ul>		
+      </ul>
     </div>
     <div id="footer" class="vcard location">
         <address class="adr">
@@ -97,7 +97,7 @@
 </div><!--wrapper-->
 
 <div id="photos">
-	    <ul>
+      <ul>
         <li><a href="/gallery/d03/" title="gallery"><img src="/images/d03.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/b02/" title="gallery"><img src="/images/b02.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/b03/" title="gallery"><img src="/images/b03.thumb.jpg" alt="" /></a></li>
@@ -108,8 +108,8 @@
         <li><a href="/gallery/e03/" title="gallery"><img src="/images/e03.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/d02/" title="gallery"><img src="/images/d02.thumb.jpg" alt="" /></a></li>
         <li><a href="/gallery/p02/" title="gallery"><img src="/images/p02.thumb.jpg" alt="" /></a></li>
-	    </ul>
+      </ul>
 </div>
-    
+
 </body>
 </html>
