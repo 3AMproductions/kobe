@@ -39,9 +39,13 @@
     <h2>Gallery</h2>
     <div id="fullsize">
       <script>
-        var img = new Image();
-        img.src = "/images/" + (new URL(document.location)).searchParams.get('photo') + ".full.jpg";
-        document.getElementById('fullsize').replaceChild(img, document.currentScript);
+        (function(photo){
+          if(!photo) return;
+
+          var img = new Image();
+          img.src = "/images/" + photo + ".full.jpg";
+          document.getElementById('fullsize').replaceChild(img, document.currentScript);
+        })((new URL(document.location)).searchParams.get('photo'));
       </script>
     </div>
     <h3>Outdoor Photos</h3>
