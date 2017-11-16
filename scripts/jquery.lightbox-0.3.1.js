@@ -30,10 +30,10 @@
 			overlayBgColor: 		'#000',		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
 			overlayOpacity:			0.8,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
 			// Configuration related to images
-			imageLoading:			'/images/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
-			imageBtnPrev:			'/images/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
-			imageBtnNext:			'/images/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
-			imageBtnClose:			'/images/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+			imageLoading:			'images/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+			imageBtnPrev:			'images/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+			imageBtnNext:			'images/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+			imageBtnClose:			'images/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
 			// Configuration related to container image box
 			containerBorderSize:	10,			// (integer) If you adjust the padding in the CSS for the container, #lightbox-container-image-box, you will need to update this value
 			containerResizeSpeed:	400,		// (integer) Specify the resize duration of container image. These number are miliseconds. 400 is default.
@@ -182,13 +182,13 @@
 			// Image preload process
 			var objImagePreloader = new Image();
 			objImagePreloader.onload = function() {
-				$('#lightbox-image').attr('src',"/images/" + settings.imageArray[settings.activeImage][0] + ".full.jpg");
+				$('#lightbox-image').attr('src',"images/" + settings.imageArray[settings.activeImage][0] + ".full.jpg");
 				// Perfomance an effect in the image container resizing it
 				_resize_container_image_box(objImagePreloader.width,objImagePreloader.height);
 				//	clear onLoad, IE behaves irratically with animated gifs otherwise
 				objImagePreloader.onload=function(){};
 			}
-			objImagePreloader.src = "/images/" + settings.imageArray[settings.activeImage][0] + ".full.jpg";
+			objImagePreloader.src = "images/" + settings.imageArray[settings.activeImage][0] + ".full.jpg";
 		};
 		/**
 		 * Perfomance an effect in the image container resizing it
