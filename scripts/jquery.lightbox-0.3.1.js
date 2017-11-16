@@ -14,6 +14,11 @@
 
 // Offering a Custom Alias suport - More info: http://docs.jquery.com/Plugins/Authoring#Custom_Alias
 (function($) {
+  // patch
+  function photoId(url) {
+    return (new URL(url, document.location).searchParams.get('photo'));
+  }
+
 	/**
 	 * $ is an alias to jQuery object
 	 *
@@ -68,16 +73,16 @@
 			settings.activeImage = 0;
 			// We have an image set? Or just an image? Lets see it.
 			if ( jQueryMatchedObj.length == 1 ) {
-				var img_url = $(objClicked).attr('href').slice(9,-1);
+				var img_url = photoId($(objClicked).attr('href'));
 				settings.imageArray.push(new Array(img_url,objClicked.getAttribute('title')));
 			} else {
 				// Add an Array (as many as we have), with href and title atributes, inside the Array that storage the images references		
 				for ( var i = 0; i < jQueryMatchedObj.length; i++ ) {
-					var img_url = $(jQueryMatchedObj[i]).attr('href').slice(9,-1);
+					var img_url = photoId($(jQueryMatchedObj[i]).attr('href'));
                     settings.imageArray.push(new Array(img_url,jQueryMatchedObj[i].getAttribute('title')));
 				}
 			}
-			while ( settings.imageArray[settings.activeImage][0] != $(objClicked).attr('href').slice(9,-1) ) {
+			while ( settings.imageArray[settings.activeImage][0] != photoId($(objClicked).attr('href')) ) {
 				settings.activeImage++;
 			}
 			// Call the function that prepares image exibition
